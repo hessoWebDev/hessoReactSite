@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200,400,400i,700|Roboto+Slab:700");
+
+body {
+  margin: 0px;
+  font-family: "Montserrat";
+  background-color: #18122b;
+}
+
+/*
+===============
+    Wrapper
+===============
+*/
+.wrapper {
+  width: 90%;
+  margin: 50px auto;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #dbdbdb;
+}
+
+/*
+==============
+    Header
+==============
+*/
+
+.pageHeader {
+  padding: 50px 30px 30px;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../images/spaceBanner.jpg");
+  color: white;
+  margin: 0px;
+}
+
+@media (min-width: 601px) {
+  .hamburger {
+    display: none; /* Hide hamburger on larger screens */
+  }
+
+  nav > ul {
+    display: flex; /* Show the menu by default on larger screens */
+    flex-direction: row;
+    gap: 50px;
+  }
+}
+
+nav > ul {
+  display: flex;
+  gap: 10px;
+  background-color: #443c68;
+  list-style-type: none;
+  padding: 9px 0 9px 30px;
+  margin: 0px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+.active > a {
+  color: #635985;
+  background-color: #dbdbdb;
+  font-weight: bold;
+}
+
+/*
+==============
+    Article
+==============
+*/
+
+main {
+  display: flex;
+  margin: 40px;
+  margin-right: 20px;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.gallery > img {
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+}
+
+.gallery.mockups > img {
+  width: 500px;
+  height: auto;
+  object-fit: cover;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+.flowDiagram {
+  width: 100%;
+}
+
+/*
+==============
+    Aside
+==============
+*/
+
+aside {
+  min-width: 30%;
+  margin-left: 50px;
+  box-shadow: 5px 5px 15px 5px lightgray;
+  height: 300px;
+  border-radius: 15px 15px 15px 15px;
+  overflow: hidden;
+  background-color: rgb(179, 179, 179);
+}
+
+aside p {
+  padding: 0 20px 0 20px;
+}
+
+.asideHeader {
+  margin-top: -5px;
+  padding: 20px;
+  background-color: #635985;
+  color: white;
+}
+
+aside div ul {
+  padding-inline-start: 40px;
+}
+
+.wp-block-list {
+  list-style-type: disc;
+  padding-inline-start: 0px;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-end: 20px;
+}
+
+/*
+==============
+    Footer
+==============
+*/
+
+footer {
+  height: 50px;
+  background-color: #443c68;
+  padding: 30px;
+}
+
+footer > img {
+  height: 60px;
+  float: right;
+}

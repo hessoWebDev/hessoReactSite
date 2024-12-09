@@ -1,0 +1,48 @@
+@media screen and (max-width: 600px) {
+    .hamburger {
+        display: block;
+    }
+
+    /* Hide the menu items */
+    nav > ul > li:not(.hamburger) {
+        display: none;
+    }
+
+    /* Show menu items when the show-menu class is added */
+    nav > ul.show-menu > li {
+        display: block;
+    }
+
+    /* Layout adjustments */
+    nav > ul {
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-width: 960px) {
+    /*
+        Move Aside underneath main content on small screens
+        and remove margin
+    */
+    main{
+        flex-wrap: wrap;
+    }
+    aside{
+        margin: 20px 0 0 0;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    /*
+        Move Aside underneath main content on small screens
+        and remove margin
+    */
+    .gallery.mockups > img {
+        width:100%;
+    }
+}
+
