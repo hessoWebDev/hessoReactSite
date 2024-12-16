@@ -5,6 +5,8 @@ import logo from "./images/logo.png";
 import Description from "./pages/description.js";
 import Logbook from "./pages/logbook.js";
 import Sketch from "./pages/sketch.js";
+import Mockup from "./pages/mockup.js";
+import Flow from "./pages/flow.js";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 function App() {
@@ -18,6 +20,8 @@ function App() {
               <li>
                 <Link to="/">Description</Link>
                 <Link to="/sketch">Sketch</Link>
+                <Link to="/mockup">Mockup</Link>
+                <Link to="/flow">Flow</Link>
                 <Link to="/logbook">Logbook</Link>
               </li>
             </ul>
@@ -27,6 +31,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Description />}></Route>
           <Route path="/sketch" element={<Sketch />}></Route>
+          <Route path="/mockup" element={<Mockup />}></Route>
+          <Route path="/flow" element={<Flow />}></Route>
           <Route path="/logbook" element={<Logbook />}></Route>
         </Routes>
         <footer>
