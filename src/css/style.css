@@ -115,6 +115,17 @@ td {
   width: 100%;
 }
 
+img.size-full {
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+}
+
+figure.wp-block-image {
+  display: inline-block;
+  margin-inline-start: 0;
+}
+
 /*
 ==============
     Aside

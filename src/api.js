@@ -1,11 +1,15 @@
 import axios from "axios";
 
 const API_URL =
-  "https://dev-jumpquest-backend-wordpress.pantheonsite.io//wp-json/wp/v2/pages";
+  "https://dev-jumpquest-backend-wordpress.pantheonsite.io/wp-json/wp/v2/pages";
 
 export const fetchPages = async () => {
   try {
-    const response = await axios.get(API_URL);
+    const response = await axios.get(API_URL, {
+      params: {
+        _cacheBuster: Date.now(), // Parameter to avoid caching
+      },
+    });
     return response.data;
   } catch (error) {
     console.log("Erreur lors de la récupération des pages :", error);
@@ -16,7 +20,10 @@ export const fetchPages = async () => {
 export const fetchPageBySlug = async (slug) => {
   try {
     const response = await axios.get(API_URL, {
-      params: { slug },
+      params: {
+        slug,
+        _cacheBuster: Date.now(), // Parameter to avoid caching
+      },
     });
     return response.data[0];
   } catch (error) {

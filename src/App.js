@@ -7,6 +7,8 @@ import Logbook from "./pages/logbook.js";
 import Sketch from "./pages/sketch.js";
 import Mockup from "./pages/mockup.js";
 import Flow from "./pages/flow.js";
+import Ressources from "./pages/links.js";
+import GameMechanics from "./pages/gameMechanics.js";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 function App() {
@@ -23,6 +25,8 @@ function App() {
                 <Link to="/mockup">Mockup</Link>
                 <Link to="/flow">Flow</Link>
                 <Link to="/logbook">Logbook</Link>
+                <Link to="/gameMechanics">Game Mechanics</Link>
+                <Link to="/links">Links</Link>
               </li>
             </ul>
           </nav>
@@ -34,6 +38,8 @@ function App() {
           <Route path="/mockup" element={<Mockup />}></Route>
           <Route path="/flow" element={<Flow />}></Route>
           <Route path="/logbook" element={<Logbook />}></Route>
+          <Route path="/gameMechanics" element={<GameMechanics />}></Route>
+          <Route path="/links" element={<Ressources />}></Route>
         </Routes>
         <footer>
           <img id="logo" src={logo} />
