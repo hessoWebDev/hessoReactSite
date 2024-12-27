@@ -7,6 +7,7 @@ import Logbook from "./pages/logbook.js";
 import Sketch from "./pages/sketch.js";
 import Mockup from "./pages/mockup.js";
 import Flow from "./pages/flow.js";
+import Ressources from "./pages/links.js";
 import GameMechanics from "./pages/gameMechanics.js";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
@@ -17,7 +18,7 @@ function App() {
         <header>
           <h1 className="pageHeader">HES-SO Vs - 64-31 - Web Development</h1>
           <nav>
-            <ul>
+            <ul className="show-menu">
               <li>
                 <Link to="/">Description</Link>
                 <Link to="/sketch">Sketch</Link>
@@ -25,6 +26,7 @@ function App() {
                 <Link to="/flow">Flow</Link>
                 <Link to="/logbook">Logbook</Link>
                 <Link to="/gameMechanics">Game Mechanics</Link>
+                <Link to="/links">Links</Link>
               </li>
             </ul>
           </nav>
@@ -37,6 +39,7 @@ function App() {
           <Route path="/flow" element={<Flow />}></Route>
           <Route path="/logbook" element={<Logbook />}></Route>
           <Route path="/gameMechanics" element={<GameMechanics />}></Route>
+          <Route path="/links" element={<Ressources />}></Route>
         </Routes>
         <footer>
           <img id="logo" src={logo} />

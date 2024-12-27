@@ -1,48 +1,36 @@
-@media screen and (max-width: 600px) {
-    .hamburger {
-        display: block;
-    }
+@media (max-width: 600px) {
+  nav > ul {
+    flex-direction: column; /* Change direction to vertical */
+    gap: 10px; /* Add space between items */
+    padding: 10px; /* Adjust padding for mobile view */
+  }
 
-    /* Hide the menu items */
-    nav > ul > li:not(.hamburger) {
-        display: none;
-    }
-
-    /* Show menu items when the show-menu class is added */
-    nav > ul.show-menu > li {
-        display: block;
-    }
-
-    /* Layout adjustments */
-    nav > ul {
-        flex-direction: column;
-        gap: 20px;
-        justify-content: center;
-        align-items: center;
-    }
-
+  nav > ul > li {
+    display: flex;
+    flex-direction: column;
+    text-align: center; /* Center the links for a better mobile appearance */
+  }
 }
 
 @media screen and (max-width: 960px) {
-    /*
+  /*
         Move Aside underneath main content on small screens
         and remove margin
     */
-    main{
-        flex-wrap: wrap;
-    }
-    aside{
-        margin: 20px 0 0 0;
-    }
+  main {
+    flex-wrap: wrap;
+  }
+  aside {
+    margin: 20px 0 0 0;
+  }
 }
 
 @media screen and (max-width: 610px) {
-    /*
+  /*
         Move Aside underneath main content on small screens
         and remove margin
     */
-    .gallery.mockups > img {
-        width:100%;
-    }
+  .gallery.mockups > img {
+    width: 100%;
+  }
 }
-
