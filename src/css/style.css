@@ -89,6 +89,10 @@ h2 {
   gap: 20px;
 }
 
+.gallery > p {
+  flex: 1 1 100%;
+}
+
 .gallery > img {
   width: 300px;
   height: auto;
