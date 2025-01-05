@@ -25,7 +25,7 @@ function App() {
                 <Link to="/mockup">Mockup</Link>
                 <Link to="/flow">Flow</Link>
                 <Link to="/logbook">Logbook</Link>
-                <Link to="/gameMechanics">Game Mechanics</Link>
+                <Link to="/gameMechanics">Tutorial</Link>
                 <Link to="/links">Links</Link>
               </li>
             </ul>

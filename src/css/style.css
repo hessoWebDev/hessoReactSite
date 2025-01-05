@@ -189,6 +189,11 @@ aside div ul li {
   padding-inline-end: 20px;
 }
 
+.content-block video {
+  width: 100%;
+  height: auto;
+}
+
 /*
 ==============
     Footer
